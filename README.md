@@ -39,6 +39,14 @@ The following scripts use an argument parser to take in inputs and outputs. See 
     --no-display          Process video without displaying the video window (faster processing)
     --no-video            Output only skeleton and markers on a black frame
   ```
+For example,
+```powershell
+python detect_landmarks.py 
+  --input DemoVideos\FrenchRevolution-7_markers_1.09_1.16.mp4 
+  --output skeleton_demo.mp4 
+  --landmarks-output empty_landmarks.json 
+```
+Will detect landmarks for the video "DemoVideos\FrenchRevolution-7_markers_1.09_1.16.mp4" and store the detected landmarks in "empty_landmarks.json"
 
 * **Generate Trace**
 
